@@ -50,6 +50,14 @@ const routes: Routes = [
     path: 'conductor-crear-viajes',
     loadChildren: () => import('./pages/conductor-crear-viajes/conductor-crear-viajes.module').then( m => m.ConductorCrearViajesPageModule)
   },
+  {
+    path: 'conductor-home',
+    loadChildren: () => import('./pages/conductor-home/conductor-home.module').then( m => m.ConductorHomePageModule)
+  },
+  {
+    path: 'solucitud',
+    loadChildren: () => import('./pages/solucitud/solucitud.module').then( m => m.SolucitudPageModule)
+  },
 
 ];
 
