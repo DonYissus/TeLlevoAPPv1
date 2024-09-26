@@ -15,7 +15,7 @@ export class ConductorHomePage {
     icono: 'car-outline'
   },
   {
-    ruta: '/solicitud',
+    ruta: '/solucitud',
     titulo: 'solicitud',
     icono: 'mail-outline'
   },
