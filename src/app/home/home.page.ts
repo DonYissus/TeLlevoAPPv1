@@ -31,4 +31,5 @@ export class HomePage {
   logout(){
     this.router.navigate(['']);
   }
+  
 }

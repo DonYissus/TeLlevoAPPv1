@@ -34,7 +34,15 @@ const routes: Routes = [
   {
     path: 'rpass',
     loadChildren: () => import('./pages/rpass/rpass.module').then( m => m.RpassPageModule)
+  },  {
+    path: 'creador-viaje',
+    loadChildren: () => import('./pages/creador-viaje/creador-viaje.module').then( m => m.CreadorViajePageModule)
   },
+  {
+    path: 'perfil-conductor',
+    loadChildren: () => import('./pages/perfil-conductor/perfil-conductor.module').then( m => m.PerfilConductorPageModule)
+  },
+
 ];
 
 @NgModule({
