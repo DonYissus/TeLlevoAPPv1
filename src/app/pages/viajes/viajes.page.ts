@@ -12,4 +12,8 @@ export class ViajesPage implements OnInit {
   ngOnInit() {
   }
 
+  guardarViaje() {
+    console.log("viaje solicitado")
+  }
+
 }

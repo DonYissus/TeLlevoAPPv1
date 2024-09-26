@@ -1,9 +1,14 @@
 <app-encabezado titulo="Viajes"></app-encabezado>
 
-<ion-content>
-
-    <ion-toolbar>
-      <ion-title size="large">viajes</ion-title>
-    </ion-toolbar>
-
-</ion-content>
+<ion-card> 
+  <ion-item>
+    <ion-label position="floating">Destino</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Fecha</ion-label>
+    <ion-input type="date"></ion-input>
+  </ion-item>
+  <ion-button expand="full" (click)="guardarViaje()">Crear viaje</ion-button>
+  
+</ion-card>
