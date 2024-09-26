@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Itemlist } from '../interfaces/itemlist';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,21 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  vinculos:Itemlist[]=[{
+    ruta:'/viajes',
+    titulo:'Viajes',
+    icono:'apps-outline'
+  },
+  {
+    ruta:'/conductor',
+    titulo: 'Conductor',
+    icono: 'car'
+  },
+];
+
   constructor() {}
 
+  ngOnInit(){
+
+  }
 }
