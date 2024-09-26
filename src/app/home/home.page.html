@@ -1,8 +1,11 @@
 <ion-header>
   <ion-toolbar color="secondary">
-    <ion-title color="dark" mode="md" class="ion-text-center">Home</ion-title>
-    <ion-icon name="person-outline" color="dark" slot="end" class="ion-padding" size="large"></ion-icon>
-    <ion-icon name="menu" color="dark" slot="start" size="large" class="ion-padding"></ion-icon>
+  <ion-title color="dark" mode="md" slot="start">Home</ion-title>
+      <ion-buttons slot="end">
+        <ion-button (click)="logout()">
+          <ion-icon slot="start" name="log-out-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
   </ion-toolbar>
 </ion-header>
 

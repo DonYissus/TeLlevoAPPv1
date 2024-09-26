@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Itemlist } from '../interfaces/itemlist';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -20,9 +21,14 @@ export class HomePage {
   },
 ];
 
-  constructor() {}
+  constructor(private router:Router) {}
 
   ngOnInit(){
 
+  }
+
+  
+  logout(){
+    this.router.navigate(['']);
   }
 }
