@@ -31,6 +31,10 @@ const routes: Routes = [
     path: 'perfil',
     loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
   },
+  {
+    path: 'rpass',
+    loadChildren: () => import('./pages/rpass/rpass.module').then( m => m.RpassPageModule)
+  },
 ];
 
 @NgModule({
