@@ -42,6 +42,14 @@ const routes: Routes = [
     path: 'perfil-conductor',
     loadChildren: () => import('./pages/perfil-conductor/perfil-conductor.module').then( m => m.PerfilConductorPageModule)
   },
+  {
+    path: 'conductor-viajes',
+    loadChildren: () => import('./pages/conductor-viajes/conductor-viajes.module').then( m => m.ConductorViajesPageModule)
+  },
+  {
+    path: 'conductor-crear-viajes',
+    loadChildren: () => import('./pages/conductor-crear-viajes/conductor-crear-viajes.module').then( m => m.ConductorCrearViajesPageModule)
+  },
 
 ];
 
