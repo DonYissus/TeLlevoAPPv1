@@ -1,6 +1,5 @@
 import { Component,} from '@angular/core';
-import { Itemlist } from 'src/app/interfaces/itemlist';
-import { Router } from '@angular/router';
+import { ItemListConductor } from 'src/app/interfaces/itemlist';
 
 @Component({
   selector: 'app-conductor-home',
@@ -9,15 +8,15 @@ import { Router } from '@angular/router';
 })
 export class ConductorHomePage {
 
-  vinculos: Itemlist[] = [{
-    ruta: '/conductor-viajes',
-    titulo: 'conductor-viajes',
-    icono: 'car-outline'
+  vinculos: ItemListConductor[] = [{
+    rutaconductor: '/conductor-viajes',
+    tituloconductor: 'Viajes',
+    iconoconductor: 'car-outline'
   },
   {
-    ruta: '/solucitud',
-    titulo: 'solicitud',
-    icono: 'mail-outline'
+    rutaconductor: '/solucitud',
+    tituloconductor: 'Mensajes',
+    iconoconductor: 'mail-outline'
   },
   ]
 

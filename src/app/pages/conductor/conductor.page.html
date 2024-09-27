@@ -1,15 +1,4 @@
-<!-- profile.html -->
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Perfil</ion-title>
-    <ion-buttons slot="end">
-      <ion-button>
-        <ion-icon slot="start" name="create"></ion-icon>
-        Editar perfil
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
+<app-encabezado titulo="Conductor"></app-encabezado>
 
 <ion-content>
   <ion-card>
@@ -31,7 +20,10 @@
   </ion-card>
 
   <div class="ion-activatable ripple-parent custom-parent">
-    Cerrar Secion
+    <ion-button (click)="onSalir()" expand="block" fill="clear" shape="round">
+      Cerrar Secion
+    </ion-button>
+   
     <ion-ripple-effect></ion-ripple-effect>
   </div>
   <div class="ion-activatable ripple-parent">

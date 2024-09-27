@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { SolucitudPageRoutingModule } from './solucitud-routing.module';
 
 import { SolucitudPage } from './solucitud.page';
+import { ComponentsModule } from "../../components/components.module";
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SolucitudPageRoutingModule
-  ],
+    SolucitudPageRoutingModule,
+    ComponentsModule
+],
   declarations: [SolucitudPage]
 })
 export class SolucitudPageModule {}

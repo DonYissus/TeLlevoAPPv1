@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Itemlist } from '../interfaces/itemlist';
+import { Itemlist, ItemListConductor } from '../interfaces/itemlist';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,27 +9,37 @@ import { Router } from '@angular/router';
 })
 export class HomePage {
 
-  vinculos:Itemlist[]=[{
-    ruta:'/viajes',
-    titulo:'Viajes',
-    icono:'apps-outline'
+  vinculos: Itemlist[] = [{
+    ruta: '/creador-viaje',
+    titulo: 'Solicitar viaje',
+    icono: 'add'
+  },
+  ];
+
+  vinculoConductor: ItemListConductor[] = [{
+    rutaconductor: '/conductor-crear-viajes',
+    tituloconductor: 'Crear viaje',
+    iconoconductor: 'car'
   },
   {
-    ruta:'/conductor',
-    titulo: 'Conductor',
-    icono: 'car'
+    rutaconductor: '/conductor-home',
+    tituloconductor: 'Historial Conductor',
+    iconoconductor: 'person'
   },
-];
+  ];
 
-  constructor(private router:Router) {}
+  constructor(private router: Router) { }
 
-  ngOnInit(){
+  ngOnInit() {
 
   }
 
-  
-  logout(){
+
+  logout() {
     this.router.navigate(['']);
   }
-  
+
+  onConductor() {
+    this.router.navigate(['/conductor'])
+  }
 }

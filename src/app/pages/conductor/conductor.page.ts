@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-conductor',
@@ -13,7 +14,7 @@ export class ConductorPage implements OnInit {
   phone: string;
   patente:string;
   Vehiculo:string;
-  constructor() { 
+  constructor(private router: Router) { 
         // Inicializa los datos del perfil
         this.username = 'johnDoe';
         this.name = 'John';
@@ -25,6 +26,10 @@ export class ConductorPage implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  onSalir() {
+    this.router.navigate(['/login'])
   }
 
 }
